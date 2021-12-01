@@ -29,11 +29,37 @@ layout = html.Div(id="tab1",
                                       clearable=False,
                                       className="dropdown",
                                   ),
-                                  dbc.Button(
-                                      "Import .csv data",
-                                      className="collapse-button", id="import",
-                                      style={"margin-top": "5px", "margin-left": "0"}
-                                  ),
+                                  html.Div([
+                                      dcc.Upload(
+                                          id='upload-data',
+                                          children=html.Div(id="file-hint"),
+                                          multiple=True,
+                                          style={
+                                              'width': '100%',
+                                              'font-size': '11px',
+                                              'height': '50px',
+                                              'lineHeight': '50px',
+                                              'borderWidth': '1px',
+                                              'borderStyle': 'dashed',
+                                              'borderRadius': '5px',
+                                              'textAlign': 'center',
+                                              'margin': '10px'
+                                          },
+                                      ),
+                                      dbc.Button(
+                                          "Import .csv data",
+                                          className="collapse-button", id="import",
+                                          # style={"margin-top": "5px", "margin-left": "0"}
+                                          style={"height":"40px", "margin-top": "15px"},
+                                          n_clicks=0
+                                      ),
+                                      dbc.Popover(
+                                          html.P(id="popover1"),
+                                          target="import",
+                                          trigger="click", style={"margin-left": "20px","font-size":"13px"}, )
+                              ],
+                                      style={"display": "flex",
+                                             "justify-content": "left","margin-left":"-10px"})
                               ]
                           ),
 

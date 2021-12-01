@@ -3,10 +3,11 @@ import plotly.graph_objs as go
 from dash import dcc
 from dash import html
 
-df2_30m = pd.read_csv("../data_process/page2_30m.csv")
-df2_60m = pd.read_csv("../data_process/page2_60m.csv")
-merged_30m = pd.read_csv("../data_process/merged_AAPL_30m_191001_191231.csv")
-merged_60m = pd.read_csv("../data_process/merged_AAPL_60m_191001_191231.csv")
+df2_30m = pd.read_csv("./data/page2_30m.csv")
+df2_60m = pd.read_csv("./data/page2_60m.csv")
+merged_30m = pd.read_csv("./data/merged_AAPL_30m_191001_191231.csv")
+merged_60m = pd.read_csv("./data/merged_AAPL_60m_191001_191231.csv")
+
 fig2 = go.Figure(data=[
     go.Line(x=merged_30m.iloc[662:]['<TIME>'], y=df2_30m['real'], mode='lines+markers', line={'dash': 'dash'},
             name='Real stock values')
@@ -24,6 +25,7 @@ fig2.update_layout(
 layout = html.Div(id="tab2",
                   style={'display': 'none'},
                   children=[
+                      dcc.Store(id='local-store', storage_type='local'),
                       html.Div(
                           html.Div(id="radios", children=[
 

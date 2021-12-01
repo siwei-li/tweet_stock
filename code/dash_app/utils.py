@@ -1,3 +1,6 @@
+import pandas as pd
+import requests
+
 base_url = "https://dsci551-sl-default-rtdb.firebaseio.com/"
 headers = {'accept': 'application/json'}
 
@@ -19,6 +22,7 @@ def get_tweet_df(ticker):
              'tweet_class', 'prob']]
     return df
 
+
 def get_time_rows(tweet_df, my_key):
     return tweet_df[tweet_df['post_time'].str.startswith(my_key)]
 
@@ -27,3 +31,7 @@ def get_type_rows(tweet_df, my_key):
     if my_key == "all":
         return tweet_df
     return tweet_df[tweet_df['tweet_class'] == my_key]
+
+def filename_handle(filename, len=20):
+    name, extension = filename.split(".")
+    return name[:len]+"..."+extension

@@ -1,11 +1,12 @@
 import dash_bootstrap_components as dbc
 from dash import Output, Input
 from dash import html
+import plotly.graph_objs as go
 
-from components import generate_table
-from tab2 import merged_60m, df2_60m, df2_30m, merged_30m
 
 from app import app
+from components import generate_table
+from tabs.tab2 import merged_60m, df2_60m, df2_30m, merged_30m
 
 df2_columns = ['<TIME>', '<OPEN>', '<HIGH>', '<LOW>', '<CLOSE>', '<VOL>', 'tw_count', 'tw_mean_chars', 'tw_n_pos',
                'tw_ratio_pos', 'tw_n_neg', 'tw_ratio_neg']
@@ -14,11 +15,12 @@ dt2_columns = ['<TIME>', '<OPEN>', '<HIGH>', '<LOW>', '<CLOSE>', '<VOL>', 'Tweet
 
 
 @app.callback(Output('tab2-table', 'children'), Output('buy-sell', 'children'), Output('save-button', 'children'),
-              Input('radio-item', "value"), Input("tab2-fig", "clickData"))
+              Output('local-store', 'data'), Input('radio-item', "value"), Input("tab2-fig", "clickData"))
 def tab2_out(interval, clickData):
     merge_info = merged_60m
     advice = ""
     button = ""
+    store_data = []
     if interval == "60m":
         df2 = df2_60m
         merged = merged_60m.iloc[355:]
@@ -28,13 +30,11 @@ def tab2_out(interval, clickData):
     if "points" in clickData and clickData["points"]:
         index = clickData["points"][0]["pointIndex"]
         time = clickData["points"][0]["x"]
-        # print(time, merged.iloc[index]['<TIME>'])
         merge_info = merged[merged['<TIME>'].str.startswith(time)]
-        # print(merge_info)
-        # print(index)
         last_real = df2.iloc[index - 1]['real']
         pred = df2.iloc[index]['pred']
         buy_sell = "buy 🔺 📈" if pred >= last_real else "sell 🔻 📉"
+        store_data = [time, pred >= last_real]
         if index >= 1:
             advice = f"Last fetched stock value is {last_real:.4f}, predicted value for {time} is {pred:.4f}, the " \
                      f"algorithm suggests to {buy_sell} "
@@ -43,22 +43,26 @@ def tab2_out(interval, clickData):
             button = html.Div([dbc.Button(
                 "Save Prediction Result",
                 className="collapse-button",
-                id='click-target'
+                id='click-target',
+                n_clicks=0
             ), dbc.Popover(
-                html.P(id="popover"),
+                html.P(id="popover2"),
                 target="click-target",
                 trigger="click", style={"margin-left": "10px"}, )])
 
-    return generate_table(merge_info, df2_columns, dt2_columns), advice, button
+    return generate_table(merge_info, df2_columns, dt2_columns), advice, button, store_data
 
 
-@app.callback(Input(''), Input(''),Output('popover','children'))
-def upload_prediction():
-    pass
+@app.callback(Output('popover2', 'children'),Input('click-target','n_clicks'), Input('local-store','data'))
+def upload_prediction(clicks, store):
+    if clicks>0:
+        return "Prediction and related info saved to database :)"
+    return ""
     # if ==200:
     #     return "Prediction and related info saved to database :)"
     # else:
     #     return "Upload error..."
+
 
 @app.callback(Output('tab2-fig', 'figure'), Output('mse', 'children'), Input('radio-item', "value"))
 def render_graph2(interval):

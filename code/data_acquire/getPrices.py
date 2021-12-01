@@ -4,7 +4,7 @@ import yfinance as yf
 from datetime import date
 
 ticker_list = ["AAPL"]
-path = "../finance/"
+path = "../finance_data/"
 file_name = "AAPL"
 # start_date = '2021-10-01'
 # last_date = '2021-10-02'
