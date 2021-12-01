@@ -1,0 +1,144 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background-color: #F7F7F7;
+}
+
+.header {
+    background-color: #222222;
+    /*height: 288px;*/
+    padding: 16px 0 16px 0;
+}
+
+
+.header-title {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-description {
+    color: #CFCFCF;
+    margin: 4px auto;
+    text-align: center;
+    /*max-width: 384px;*/
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    /*max-width: 1024px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 32px;
+}
+
+.card {
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.menu {
+    /*height: 112px;*/
+    /*width: 912px;*/
+    display: flex;
+    justify-content: space-evenly;
+    /*    padding-top: 24px;*/
+    /*    margin: -80px auto 0 auto;*/
+    /*    background-color: #FFFFFF;*/
+    /*    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);*/
+}
+
+.radio {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.radio-items {
+    display: flex;
+    justify-content: center;
+}
+
+/*#radio-item {*/
+/*    padding-top: 22px;*/
+/*}*/
+
+.menu-title {
+    margin: 15px 5px 5px 5px;
+}
+
+.dropdown {
+    width: 300px;
+}
+
+.DateInput_input, .DateInput_input_1 {
+    Height: 30px;
+}
+
+.graph-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table-title {
+    margin-left: 5px;
+}
+
+.table {
+    margin: 5px;
+    padding: 5px;
+}
+
+.collapse-button {
+    color: #1f78b4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1f78b4;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    /*text-transform: uppercase;*/
+    font-family: sans-serif;
+    transition: all 0.2s ease;
+    margin-left: 20px;
+}
+
+
+
+.collapse-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.collapse-button:focus-visible {
+  box-shadow: none;
+}
+.collapse-button:hover{
+    background-color: rgb(249,250,251);
+}
+.text-box {
+    line-height: 2;
+    text-align: center;
+    margin: 30px;
+}
+
+
+/*.Select-control {*/
+/*    width: 256px;*/
+/*    height: 48px;*/
+/*}*/
+
+/*.Select--single > .Select-control .Select-value, .Select-placeholder {*/
+/*    line-height: 48px;*/
+/*}*/
+
+/*.Select--multi .Select-value-label {*/
+/*    line-height: 32px;*/
+/*}*/
+
+/*.menu-title {*/
+/*    margin-bottom: 6px;*/
+/*    font-weight: bold;*/
+/*}*/
