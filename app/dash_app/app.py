@@ -408,13 +408,14 @@ def tab2_out(interval, clickData):
 
     return generate_table(merge_info, df2_columns, dt2_columns), advice, button
 
-@app.callback(Input(''), Input(''),Output('popover','children'))
-def upload_prediction():
 
-    if ==200:
-        return "Prediction and related info saved to database :)"
-    else:
-        return "Upload error..."
+# @app.callback(Input(''), Input(''),Output('popover','children'))
+# def upload_prediction():
+#
+#     if ==200:
+#         return "Prediction and related info saved to database :)"
+#     else:
+#         return "Upload error..."
 
 
 @app.callback(Output('candle-fig', 'figure'), Input('company-filter', "value"))
