@@ -56,7 +56,7 @@ layout = html.Div(id="tab1",
                                       dbc.Popover(
                                           html.P(id="popover1"),
                                           target="import",
-                                          trigger="click", style={"margin-left": "20px","font-size":"13px"}, )
+                                          trigger="click", style={"margin-left": "20px","font-size":"13px","width":"100%"}, )
                               ],
                                       style={"display": "flex",
                                              "justify-content": "left","margin-left":"-10px"})

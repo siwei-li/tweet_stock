@@ -68,3 +68,11 @@ def show_hide_tab(tab):
 
 
 
+@app.callback(Output('popover1', 'children'), Input('import', 'n_clicks'), Input('upload-data', 'contents'),Input('tabs', 'value'))
+def hint(clicks, file_content, tab):
+    if clicks > 0 and file_content and tab=="tab1":
+        return f"Calculating tweet sentiment scores..."
+    return ""
+
+
+

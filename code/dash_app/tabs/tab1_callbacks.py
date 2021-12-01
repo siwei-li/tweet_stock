@@ -40,11 +40,11 @@ def render_graph1(ticker):
                      layout=go.Layout(margin=dict(t=30, b=30, l=50, r=30, pad=5)))
 
 
-@app.callback(Output('popover1', 'children'), Input('import', 'n_clicks'), Input('upload-data', 'contents'))
-def hint(clicks, file_content):
-    if clicks > 0 and file_content:
-        return f"Calculating tweet sentiment scores..."
-    return ""
+# @app.callback(Output('popover1', 'children'), Input('import', 'n_clicks'), Input('upload-data', 'contents'))
+# def hint(clicks, file_content):
+#     if clicks > 0 and file_content:
+#         return f"Calculating tweet sentiment scores..."
+#     return ""
 
 
 @app.callback(Output('file-hint', 'children'), Input('upload-data', 'contents'),
