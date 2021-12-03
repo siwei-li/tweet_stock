@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17179fbb-f01d-4261-b874-b5a2eb7d3bc1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/tweet_stock.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../components.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memoization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab1_callbacks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab2_callbacks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../outputs/saved_predictions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../best_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/../../best_model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_acquire/getPriceMinute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_acquire/getPriceMinute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_acquire/getPrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_acquire/getPrices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_acquire/getTweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_acquire/getTweets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_acquire/sentiment.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_acquire/sentiment.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_acquire/tweetScraper.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_acquire/tweetScraper.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_acquire/tweetStream.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_acquire/tweetStream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_process/data_clean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_process/data_clean.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_process/data_merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_process/data_merge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_process/firebase.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_process/firebase.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_process/page1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_process/page1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_process/page2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_process/page2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/baseline_LSTM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/baseline_LSTM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/models/baseline_AAPL.h5" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/models/baseline_AAPL.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/tweet_LSTM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/tweet_LSTM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/untitled_project/oracle.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/untitled_project/oracle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/untitled_project/trial_3b4328997451f686a9084fbd7ea8e4f8/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/untitled_project/trial_3b4328997451f686a9084fbd7ea8e4f8/trial.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="21lA3uDYoas9m8Azt8BjVWOJo7m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17179fbb-f01d-4261-b874-b5a2eb7d3bc1" name="Changes" comment="" />
+      <created>1638505105941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638505105941</updated>
+      <workItem from="1638505107911" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
